@@ -63,3 +63,25 @@ eliminarContacto(1094972117);
 
 //imprimo el array con el contacto eliminado
 console.log(miListaDeContactos);
+
+
+// BONUS PARA EL REVIEW-1
+
+//creo función para reemplazar datos dentro del Array 
+function actualizarDato(id, valorAntiguo, valorNuevo) {
+    let indiceCambiar = miListaDeContactos.findIndex(indiceCambiar => indiceCambiar.id === id);
+   
+    if (indiceCambiar !== -1) {
+        if(valorAntiguo === "ciudad" || valorAntiguo === "direccion"){
+             miListaDeContactos[indiceCambiar].ubicacion[valorAntiguo] = valorNuevo;
+        } else {
+            miListaDeContactos[indiceCambiar][valorAntiguo] = valorNuevo;
+            }
+     }
+  }
+
+  //llamo a la función y le cambio un dato
+actualizarDato(7521508, "nombres", "Jesús");
+
+//imprimo el array con el nuevo dato cambiado
+console.log(miListaDeContactos);
