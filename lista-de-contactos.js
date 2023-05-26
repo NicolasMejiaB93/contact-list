@@ -1,4 +1,8 @@
-let listaDeContactos = ["nicolas mejia", "tatiana aguirre", "camila suarez", "jorge meneses", "juan sebastián hernández"];
+let listaDeContactos = ["nicolas mejia", 
+                        "tatiana aguirre",
+                        "camila suarez",
+                        "jorge meneses",
+                        "juan sebastián hernández"];
 
 function añadirContacto(contacto){
     listaDeContactos.push(contacto);
